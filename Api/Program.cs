@@ -1,8 +1,19 @@
+using Dominio.Ports.Primary;
+using Dominio.Ports.Secundary;
+using Dominio.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "product.json");
+
+
+//Inyeccion de dependencias
+builder.Services.AddTransient<IRepository>(provider => new JsonRepository.ProductRepository(path));
+builder.Services.AddTransient<IService, ProductService>();
 
 //Agregar codigo para swagger
 builder.Services.AddEndpointsApiExplorer();
