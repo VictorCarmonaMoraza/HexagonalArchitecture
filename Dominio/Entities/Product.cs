@@ -25,12 +25,11 @@ namespace Dominio.Entities
             set
             {
                 // Validación: el valor no puede ser nulo ni vacío.
-                // CORRECCIÓN: aquí se debe usar 'value', no '_name'.
                 if (string.IsNullOrEmpty(value))
                 {
                     throw new ArgumentNullException("El nombre no puede ir vacío");
                 }
-                _name = value; // Asigna el valor si pasa la validación.
+                _name = value;
             }
         }
 
@@ -46,7 +45,7 @@ namespace Dominio.Entities
                 {
                     throw new ArgumentException("El precio debe ser mayor que cero");
                 }
-                _price = value; // Asigna el valor si pasa la validación.
+                _price = value;
             }
         }
 
