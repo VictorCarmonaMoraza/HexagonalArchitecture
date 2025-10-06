@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonRepository", "JsonRepository\JsonRepository.csproj", "{1A660CE9-D89A-4A27-9828-DF4B4BF10D11}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{C651D05C-BB81-46F2-BAD4-0142520CE769}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{1A660CE9-D89A-4A27-9828-DF4B4BF10D11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A660CE9-D89A-4A27-9828-DF4B4BF10D11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A660CE9-D89A-4A27-9828-DF4B4BF10D11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C651D05C-BB81-46F2-BAD4-0142520CE769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C651D05C-BB81-46F2-BAD4-0142520CE769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C651D05C-BB81-46F2-BAD4-0142520CE769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C651D05C-BB81-46F2-BAD4-0142520CE769}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{84AAF517-3C80-4978-9088-3180A811B36E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{1A660CE9-D89A-4A27-9828-DF4B4BF10D11} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{C651D05C-BB81-46F2-BAD4-0142520CE769} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1D488911-6FC6-4090-8510-991C9C50BD28}
