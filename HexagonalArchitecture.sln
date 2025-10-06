@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36429.23 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HexagonalArchitectureMinimal", "HexagonalArchitectureMinimal", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{84AAF517-3C80-4978-9088-3180A811B36E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84AAF517-3C80-4978-9088-3180A811B36E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84AAF517-3C80-4978-9088-3180A811B36E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84AAF517-3C80-4978-9088-3180A811B36E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84AAF517-3C80-4978-9088-3180A811B36E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{84AAF517-3C80-4978-9088-3180A811B36E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D488911-6FC6-4090-8510-991C9C50BD28}
+	EndGlobalSection
+EndGlobal
