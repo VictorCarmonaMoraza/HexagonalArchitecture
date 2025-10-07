@@ -1,6 +1,7 @@
 using Dominio.Ports.Primary;
 using Dominio.Ports.Secundary;
 using Dominio.Services;
+using XMLRepository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +13,8 @@ string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "product.json"
 
 
 //Inyeccion de dependencias
-builder.Services.AddTransient<IRepository>(provider => new JsonRepository.ProductRepository(path));
+//builder.Services.AddTransient<IRepository>(provider => new JsonRepository.ProductRepository(path));
+builder.Services.AddTransient<IRepository>(provider => new XMLProductRepository());
 builder.Services.AddTransient<IService, ProductService>();
 
 //Agregar codigo para swagger
