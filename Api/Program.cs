@@ -30,6 +30,17 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.MapGet("/products", (IService service) =>
+{
+    return service.GetAll();
+}).WithName("GetProducts");
+
+app.MapPost("/products", (string name, decimal price, IService service) =>
+{
+    service.Register(name, price);
+    return Results.Created();
+}).WithName("AddProduct");
 /*
 var summaries = new[]
 {
